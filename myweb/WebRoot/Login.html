@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <title>LOGIN</title>
+    <script src="js/Login.js"></script>
+</head>
+<body>
+    <div class="form-wrapper">
+        <div class="header">
+        WelCome
+        </div>
+        <form action="login.do" method="POST">
+            <div class="input-wrapper">
+                <div class="border-wrapper">
+                  <input type="text" name="username" placeholder="username" class="border-item">
+                </div>
+            <div class="border-wrapper">
+                 <input type="password" name="password" placeholder="password" class="border-item">
+            </div>
+
+            <div class="code-and-image">
+
+                <div class="code">
+                    <input type="text" name="vcode" placeholder="vcode" class="border-item">
+                </div>
+
+                <div class="image">
+                    <img src="CreateVerfifyCodeImage" onclick="changeCode()" id="verifyCode" title="看不清，换一张">
+                </div>
+            </div>
+
+            </div>
+                <div class="action">
+                    <div class="btn">
+                        <input type="submit" id="submit" value="Login" style="outline: none;" class="button"/>
+                    </div>
+                </div>
+                <input type="checkbox" name="checkBox" value="yes" id="checkbox"/>
+                <label>一周内免登录</label>
+        </form>
+        <div class="icon-wrapper">
+            <i class="iconfont phs-weixin">&#xe614;</i>
+        </div>
+    </div>  
+</body>
+</html>
