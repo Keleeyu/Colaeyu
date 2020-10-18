@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <title>LOGIN</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/checkcode.js"></script>
+    <script src="js/Login.js"></script>
+    <script>
+        function toregister(){
+            window.location="register.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="form-wrapper">
+        <div class="header">
+        WelCome
+        </div>
+        <!--<form action="login.do" method="POST">-->
+            <div class="input-wrapper">
+                <div class="border-wrapper">
+                  <input type="text"  id="userName" placeholder="userName" class="border-item">
+                </div>
+            <div class="border-wrapper">
+                 <input type="password"  id="password" placeholder="password" class="border-item">
+            </div>
+
+            <div class="code-and-image">
+
+                <div class="code">
+                    <input type="text" id="vcode" placeholder="vcode" class="border-item">
+                </div>
+
+                <div class="image">
+                    <img src="CreateVerfifyCodeImage" onclick="changeCode()" id="verifyCode" title="看不清，换一张">
+                </div>
+            </div>
+
+            </div>
+                <div class="action">
+                    <div class="btn">
+                        <input type="submit" id="submit" onclick="jqAjaxCheckLogin()" value="Login" style="outline: none;" class="button"/>
+                    </div>
+                </div>
+                <input type="checkbox" id="flag" name="flag" value="yes">
+                <label>一周内免登录</label>
+                <label id="checkError"></label>
+        <!--</form>-->
+        <div class="icon-wrapper">
+            <i class="iconfont phs-weixin">&#xe614;</i>
+        </div>
+        <label id="register" onclick="toregister()">注册新账号</label>
+    </div>  
+</body>
+</html>

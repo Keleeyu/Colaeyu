@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../image/error.jpg");
+    background-size: 100% 100%;
+}
+
+.background {
+    width: 300px;
+    height: 50px;
+    color:#fff;
+    align-content: center;
+    border-radius: 25px;
+    padding: 50px;
+    transform: translateY(-150px);
+}
+
+.background .errormsg .num{
+    float: left;
+    color: red;
+    font-size: 50px;
+}
+
+.background .errormsg .msg{
+    float: left;
+    transform: translateY(15px);
+}
+.background .errormsg .msgn{
+    transform: translateY(15px);
+}
+
+.background .errormsg .msgm{
+    transform: translateY(15px);
+    float: left;
+}
+
+.background .errormsg .click{
+    transform: translateY(15px);
+    float: left;
+    color: red;
+    border-bottom: red 2px solid;
+    cursor: pointer;
+}
