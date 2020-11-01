@@ -1,0 +1,20 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: linear-gradient(125deg,#27ae5fa0,#2980b9a0,#e74c3ca0,#8e44ada0);
+    background-size: 400%;
+    animation: bganiation 15s infinite;
+}
+
+@keyframes bganiation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
