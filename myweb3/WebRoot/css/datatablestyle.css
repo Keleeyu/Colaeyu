@@ -1,0 +1,326 @@
+body{
+    background-image: url(../image/background.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+#pageBody{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+#searcharea{
+    width: 100%;
+    height: 50px;
+}
+
+#search{
+    float: left;
+}
+
+input[type="text"] {
+    margin: 15px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+    width: 200px;
+    border-radius: 2px;
+}
+
+input[type="password"] {
+    margin: 15px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+    width: 200px;
+    border-radius: 2px;
+}
+
+#bt{
+    margin-left: 30px;
+    margin-top: 15px;
+    float: left;
+}
+
+#btSearch{
+    margin-left: 10px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    display:block;
+    width:90px;
+    height:30px;
+    border:none;
+    background-color: #2E9AFE;
+    border-radius: 2px;
+    background-image: url(../image/search.png);
+    background-size: 20px 20px;
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+}
+
+#btClear{
+    margin-left: 10px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    display:block;
+    width:90px;
+    height:30px;
+    border:none;
+    background-color: #FF8000;
+    border-radius: 2px;
+    background-image: url(../image/clear.png);
+    background-size: 20px 20px;
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+}
+
+#btAdd{
+    margin-left: 10px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    display:block;
+    width:90px;
+    height:30px;
+    border:none;
+    background-color: #088A29;
+    border-radius: 2px;
+    background-image: url(../image/add.png);
+    background-size: 20px 20px;
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+}
+
+#btDelete{
+    margin-left: 10px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    display:block;
+    width:90px;
+    height:30px;
+    border:none;
+    background-color: #FACC2E;
+    border-radius: 2px;
+    background-image: url(../image/delete.png);
+    background-size: 20px 20px;
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+}
+
+#btUpdate{
+    margin-left: 10px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    display:block;
+    width:90px;
+    height:30px;
+    border:none;
+    background-color: #0489B1;
+    border-radius: 2px;
+    background-image: url(../image/edit.png);
+    background-size: 20px 20px;
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+}
+
+
+table, th, td
+{
+    border: 1px solid #848484;
+}
+
+th
+{
+    background-color:#2E9AFE;
+    height:30px;
+}
+
+table{
+    border-radius: 2px;
+    border-collapse:collapse;
+    width: 100%;
+}
+
+.tr_even{
+    text-align: center;
+    height: 30px;
+    background-color:#F2F2F2;
+}
+
+.tr_odd{
+    text-align: center;
+    height: 30px;
+    background-color: #BDBDBD;
+}
+
+.pageSize{
+    float: left;
+}
+
+.pageNav{
+    float: right;
+}
+
+#first,#back,#next,#last{
+    color: #fff;
+    text-decoration: none;
+}
+
+.tr_hover{
+    background-color: #FAFAD2;
+}
+
+.tr_select{
+    background-color: 	#87CEFA;
+}
+
+.black_overlay{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(187, 184, 184);
+    z-index: 1001;
+    -moz-opacity:0.7;
+    opacity: 0.7;
+}
+
+.white_content{
+    display: none;
+    position: absolute;
+    width: 380px;
+    border:6px solid lightblue;
+    background-color: rgb(41, 45, 62);
+    z-index: 1002;
+    color:#fff;
+    overflow: auto;
+    border-radius: 2px;
+}
+
+#InuserName{
+    width: 80%;
+    background-image: url(../image/user.png);
+    background-size: 15px 15px;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding: 5px 0px 5px 20px;
+    border-radius: 5px;
+    margin-left: 7%;
+}
+
+#InchrName{
+    width: 80%;
+    background-image: url(../image/user.png);
+    background-size: 15px 15px;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding: 5px 0px 5px 20px;
+    border-radius: 5px;
+    margin-left: 7%;
+}
+
+#Inemail{
+    width: 80%;
+    background-image: url(../image/email.png);
+    background-size: 15px 15px;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding: 5px 0px 5px 20px;
+    border-radius: 5px;
+    margin-left: 7%;
+}
+
+
+#Inprovince{
+    width: 80%;
+    background-image: url(../image/City.png);
+    background-size: 15px 15px;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding: 5px 0px 5px 20px;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 7%;
+}
+
+#Incity{
+    width: 80%;
+    background-image: url(../image/City.png);
+    background-size: 15px 15px;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding: 5px 0px 5px 20px;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 7%;
+}
+
+#password{
+    width: 80%;
+    background-image: url(../image/password.png);
+    background-size: 15px 15px;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding: 5px 0px 5px 20px;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 7%;
+}
+
+#repassword{
+    width: 80%;
+    background-image: url(../image/password.png);
+    background-size: 15px 15px;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding: 5px 0px 5px 20px;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 7%;
+}
+
+#submit{
+    height: calc(100% - 4px);
+    width: 80%;
+    font-style: inherit;
+    color:#fff;
+    font-size: 25px;
+    background-color:   #38d3e7;
+    border: none;
+    border-width: 0ch;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10%;
+    padding: 5px 0px 5px 0px;
+}
+
+#title{
+    text-align: center;
+}
